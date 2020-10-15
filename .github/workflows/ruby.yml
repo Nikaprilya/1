@@ -1,0 +1,15 @@
+puts "Press a"
+a = gets.chomp.to_i
+puts "Press b"
+b = gets.chomp.to_i
+puts "Press c"
+c = gets.chomp.to_i
+d=b**2-4*a*c
+if (d>0)
+puts "d=#{d}, x1=#{(-b+Math.sqrt(d))/(2*a)}, x2=#{(-b-Math.sqrt(d))/(2*a)}"
+elsif d==0
+puts "d=#{d}, x=#{(-b)/(2*a)}"
+else 
+puts "No roots"
+end
+STDIN.getc
